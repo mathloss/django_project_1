@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}Bienvenu sur mon site{% endblock%}
+
+{% block content %}
+
+<div class="card-group" style="width: 40rem;">
+  <div class="card" >
+    <img src="{% static 'images/me.jpg' %}" class="card-img-top" alt="Moi!!">
+    <div class="card-body">
+      <h5 class="card-title">Ma tête</h5>
+      <p class="card-text">Le 1er site dynamique réalisé avec django!!</p>
+      <a href="{% url 'about' %}" class="btn btn-dark">A propos</a>
+    </div>
+  </div>
+  <div class="card" >
+    <img src="{% static 'images/site.jpg' %}" class="card-img-top" alt="Mon site">
+    <div class="card-body">
+      <h5 class="card-title">Mon site</h5>
+      <p class="card-text">Site personnel qui contient tous mes projets.</p>  
+      <a href="https://mathloss.github.io/site_perso_3/" class="btn btn-dark">Site Perso</a>    
+    </div>
+  </div>
+ </div>
+
+
+
+{% endblock %}
